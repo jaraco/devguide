@@ -513,7 +513,7 @@ Code Objects
 The result of ``PyAST_CompileObject()`` is a ``PyCodeObject`` which is defined in
 :file:`Include/code.h`.  And with that you now have executable Python bytecode!
 
-The code objects (byte code) are executed in :file:`Python/ceval.c`.  This file
+The code objects (bytecode) are executed in :file:`Python/ceval.c`.  This file
 will also need a new case statement for the new opcode in the big switch
 statement in ``_PyEval_EvalFrameDefault()``.
 
@@ -581,7 +581,7 @@ Important Files
         (for string annotations).
 
     ceval.c
-        Executes byte code (aka, eval loop).
+        Executes bytecode (aka, eval loop).
 
     compile.c
         Emits bytecode based on the AST.
